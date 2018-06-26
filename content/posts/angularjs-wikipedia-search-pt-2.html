@@ -1,0 +1,127 @@
+---
+layout: post
+status: publish
+published: true
+title: AngularJS Wikipedia Search App - Part Two
+author:
+  display_name: Kimberly
+  login: geek
+  email: email@kimberly.codes
+  url: http://kimberly.codes
+author_login: geek
+author_email: email@kimberly.codes
+author_url: http://kimberly.codes
+date: '2017-01-25 12:00:21 +0000'
+date_gmt: '2017-01-25 12:00:21 +0000'
+categories:
+- API
+- Tutorial
+- JavaScript
+- jQuery
+- AngularJS
+tags:
+- tutorial
+- api
+- how do i use api
+- javascript
+- jquery
+- wikipedia api
+- angularjs
+- "$watch"
+- angular 1
+- angular app
+- how do apis work
+- how do i make api call
+- wikipedia
+comments: []
+---
+<p><a href="posts/angularjs-wikipedia-search-pt-1/" target="_blank">Continued from Part One</a><br />
+<!--more--></p>
+<h2>Build a Wikipedia Search App With AngularJS</h2>
+<h3>Part Two - Use Output</h3>
+<p>So, if everything went as expected in the first part, you should be getting output in your console.</p>
+<p>Now we need to actually display the output on the page.</p>
+<hr />
+<h2>The JavaScript</h2>
+<p>We first need to modify our app so that it does something with the data besides printing to the console.</p>
+<p>[js]<br />
+// app.js</p>
+<p>$scope.results = [];</p>
+<p>this.searchTerm = '';<br />
+_this.search = function() {<br />
+  $.getJSON(API_PATH + '?action=opensearch&callback=?&search='<br />
+  + _this.searchTerm, function(json){<br />
+    $scope.results = json;<br />
+  });<br />
+};<br />
+[/js]</p>
+<p><em>You can view the full code for the (completed) app <a href="https://github.com/kimberlythegeek/api-examples/blob/master/wikipedia/angular/index.html" target="_blank">here</a>.</em></p>
+<p>Here we're adding the results to a <code>$scope</code> variable, so that we can access it within our scope (i.e. our HTML).</p>
+<p>Try displaying this in your HTML (anywhere within the controller block) using <code>{{ results }}</code>.</p>
+<p>You should find that, although it does work, <strong>it doesn't do so on the first submit</strong>.</p>
+<p>This is because of Angular's <em>Digest Cycle</em>. The <code>$scope</code> variable is being updated, but after Angular has already completed its cycle.</p>
+<h5 style="padding-top:0;padding-bottom:1rem;">Therefore, the changes won't be detected by Angular until the next Digest Cycle.</h5>
+<p>Normally this will occur automatically, but in cases where it doesn't, we can use <code>$scope.apply();</code> to apply the changes immediately.</p>
+<p>Add that line to your function so that it looks like this:</p>
+<p>[js]<br />
+$scope.results = json;<br />
+$scope.$apply();<br />
+[/js]</p>
+<h6>The $scope.results variable will now update immediately on submit.</h6>
+<hr />
+<h2>The HTML</h2>
+<p>We're going to add the below code between the <code>&#60;tbody&#62;</code> tags in <code>index.html</code>.</p>
+<p>[html]<br />
+&#60;tbody&#62;<br />
+// index.html<br />
+ &#60;tr ng-repeat="title in results[1]"&#62;<br />
+   &#60;td class="col-xs-3"&#62;&#60;a ng-href="{{ results[3][$index] }}"&#62;{{ title }}&#60;/a&#62;&#60;/td&#62;<br />
+   &#60;td class="col-xs-9"&#62;{{ results[2][$index] }}&#60;/td&#62;<br />
+ &#60;/tr&#62;</p>
+<p>&#60;/tbody&#62;<br />
+[/html]</p>
+<p>While you could create separate objects for the title, description, and urls, here I have kept them within the same object, just as it's returned from the API.</p>
+<p>The JSON object return from the API call is structured as follows:</p>
+<pre>
+Array[4]
+  [0] "your search term"
+  [1] Array containing <em>Titles</em> of results
+  [2] Array containing <em>Descriptions</em> of results
+  [3] Array containing <em>URLs</em> to the article
+</pre>
+<p>The default returns only the top 10 results, so you should have three arrays, each of length 10.</p>
+<p>So, in the above code, <code>title in results[1]</code> is iterating through the array of titles.</p>
+<p>We want the titles, descriptions, and URLs for each result to show up together, so we are only using <code>ng-repeat</code> once.</p>
+<p>We can then use Angular's built-in <code>$index</code> object to reference the corresponding values from the other arrays.</p>
+<p><code>results[3][$index]</code> is the URL for the result, and <code>results[2][$index]</code> is the description for the result.</p>
+<blockquote><p>Note that you should use <code>ng-href</code> instead of <code>href</code> when your URL is loaded dynamically via Angular.</p>
+<p>While the link will still work properly if you don't, it will print an annoying 404 error in your console.</p></blockquote>
+<p>If you're curious, this is because HTML is processed before the Angular app is compiled. So HTML looks at <code>href</code> and sees some weird shit it doesn't understand, <code>{{ results[3][$index] }}</code>, which returns a 404.</p>
+<p>Using <code>ng-href</code> means that the value of the URL will be processed by Angular at the time the app is compiled.</p>
+<h6>Now your app should be fully functional, updating immediately on submit.</h6>
+<hr />
+<h2>A Little Something Extra!</h2>
+<p>So now our search works, it looks nice, but...it's always fun to do a little something extra!</p>
+<p>We're going to update the app so that it will begin displaying results <em>as soon as you start typing</em>.</p>
+<p>This is actually really simple with Angular's <code>$watch</code> service.</p>
+<p>We're going to take the <code>this.search</code> function and replace it with the following code:</p>
+<p>[js]<br />
+$scope.$watch('ctrl.searchTerm', function(newVal, oldVal) {<br />
+  $.getJSON(API_PATH + '?action=opensearch&callback=?&search='<br />
+  + newVal, function(json){<br />
+    $scope.results = json;<br />
+    $scope.$apply();<br />
+  });<br />
+});<br />
+[/js]</p>
+<p>Here we've just taken all of the code from our <code>this.search</code> function and placed in inside <code>$scope.$watch</code>.</p>
+<p>This means that we can actually remove the submit button from our <code>index.html</code> file, because we won't be using it anymore.</p>
+<ol>
+<li>The first parameter in <code>$scope.$watch</code> is the name used as <code>ng-model</code> for the input in your <strong>index.html</strong> file.</li>
+<li>The second parameter is a function with the parameters <code>newValue</code> and <code>oldValue</code>. We're not actually doing anything with the old value here, but it's good to know for future reference.</li>
+</ol>
+<h6>Now have a fully functional and dynamic AngularJS Wikipedia search app!</h6>
+<p><a href="https://kimberlythegeek.github.io/api-examples/wikipedia/angular/"><img src="images/wikipedia-search.jpg" alt="angularjs wikipedia search app" width="525" height="290" /></a></p>
+<p>Yay!</p>
+<p>I always recommend that if you run into problems to <em><a href="http://google.com" target="_blank">Google that Shit</a></em>, but feel free to ping me <a href="http://twitter.com/kimberlythegeek" target="_blank">@kimberlythegeek</a> if you have any questions.</p>
+<p><em>You can view the code for the (completed) app on my <a href="http://github.com/kimberlythegeek/api-examples/tree/master/wikipedia/angular" target="_blank">GitHub repository</a>, and a live example on <a href="http://kimberlythegeek.github.io/api-examples/wikipedia/angular/" target="_blank">GitHub Pages</a>.</em></p>

@@ -1,0 +1,148 @@
+---
+layout: post
+status: publish
+published: true
+title: AngularJS Wikipedia Search App - Part One
+author:
+  display_name: Kimberly
+  login: geek
+  email: email@kimberly.codes
+  url: http://kimberly.codes
+author_login: geek
+author_email: email@kimberly.codes
+author_url: http://kimberly.codes
+date: '2017-01-16 15:11:39 +0000'
+date_gmt: '2017-01-16 15:11:39 +0000'
+categories:
+- API
+- Tutorial
+- JavaScript
+- jQuery
+- AngularJS
+tags:
+- tutorial
+- jquery
+- wikipedia api
+- angularjs
+- api tutorial
+- wikipedia search
+comments:
+- id: 30
+  author: AngularJS Wikipedia Search App - Part Two | Kimberly the Geek
+  author_email: ''
+  author_url: http://kimberlythegeek.com/angularjs-wikipedia-search-pt-2/
+  date: '2017-01-25 12:00:28 +0000'
+  date_gmt: '2017-01-25 19:00:28 +0000'
+  content: "[&#8230;] Continued from Part One [&#8230;]"
+---
+<h2>Build a Wikipedia Search App With AngularJS</h2>
+<h3>Part One - Get Output</h3>
+<p>In the previous post, I showed how to make unauthenticated API requests to the Wikipedia API.</p>
+<p>In this tutorial, I'm going to rebuild the <a href="https://kimberlythegeek.github.io/api-examples/wikipedia/search-app">Wikipedia Search App</a> using AngularJS.</p>
+<p>Here's what we're going to start with:</p>
+<p>[js]<br />
+// app.js</p>
+<p>(function(){<br />
+  'use strict';</p>
+<p>  angular.module('wikipediaApp', [])<br />
+  .constant('API_PATH', 'https://en.wikipedia.org/w/api.php')<br />
+  .controller('SearchController', SearchController);</p>
+<p>  SearchController.$inject = ['$scope', '$http', 'API_PATH'];<br />
+  function SearchController($scope, $http, API_PATH){</p>
+<p>  }</p>
+<p>})();[/js]<br />
+<!--more--></p>
+<p>There are a few things to note.</p>
+<ul>
+<li>All of the code is wrapped inside a function: <code>(function() {...} )();</code>. This is called an <a href="https://en.wikipedia.org/wiki/Immediately-invoked_function_expression" target="_blank"><strong>IIFE</strong></a>.<br />
+<br />This is used often in JavaScript, and is recommended to prevent variables being accessed from outside their scope.</li>
+<li>I'm also using the <code>'use strict';</code> directive here.<br />
+<br /><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" target="_blank"><strong>Strict Mode</strong></a> will throw errors that would have otherwise been ignored, for example, when declaring global variables.</li>
+<li>Then we declare the Angular app itself, a constant to hold the base API path, and the controller to handle the logic.</li>
+<li>With each Angular module, it's recommended to <code>inject</code> the services and modules that it depends on.<br />
+<br />Dependency injection will protect your Angular app from minification.<br />
+<br />Here, we're injecting the Angular services <code>$scope</code> and <code>$http</code>, as well as our constant, <code>API_PATH</code>, into our controller.
+</li>
+</ul>
+<hr />
+<h3>The HTML</h3>
+<p>Next we'll set up the index.html file.</p>
+<p>I'll be using the stylesheet and index file from the <a href="https://kimberlythegeek.github.io/api-examples/wikipedia/search-app/" target="_blank">Wikipedia App</a> referenced in <a href="posts/wikipedia-api-basics/" target="_blank">How the #$@& Do I Use an API?!</a>, with a few modifications.</p>
+<p>[html]</p>
+<p>// index.html</p>
+<p>&#60;html ng-app="wikipediaApp"&#62;<br />
+&#60;head&#62;...&#60;/head&#62;<br />
+&#60;body ng-controller="SearchController as ctrl"&#62;<br />
+...</p>
+<p> &#60;div class="search"&#62;</p>
+<p>  &#60;button id="search" class="btn center-block"<br />
+  ng-click="search.state = !search.state"&#62;<br />
+  Search<br />
+  &#60;/button&#62;</p>
+<p>  &#60;div class="search-container" ng-if="search.state"&#62;<br />
+   &#60;form&#62;<br />
+    &#60;span class="col-xs-10 col-xs-offset-1 form-group"&#62;</p>
+<p>     &#60;input ng-model="searchTerm"<br />
+     id="searchbox" class="searchbox form-control" type="text"<br />
+     name="query" placeholder="Search Wikipedia"&#62;</p>
+<p>    &#60;/span&#62;</p>
+<p>    &#60;button ng-click="ctrl.search(searchTerm)"<br />
+    id="submit" class="fa fa-chevron-right" aria-hidden="true"&#62;<br />
+    &#60;/button&#62;</p>
+<p>   &#60;/form&#62;<br />
+  &#60;/div&#62;&#60;!-- .search-container --&#62;</p>
+<p>  &#60;table class="search-results table table-striped table-hover table-responsive"&#62;<br />
+   &#60;tbody&#62;</p>
+<p>   // Our data will go here</p>
+<p>   &#60;/tbody&#62;<br />
+  &#60;/table&#62;<br />
+ &#60;/div&#62;&#60;!-- .search --&#62;</p>
+<p>...</p>
+<p>&#60;script src="lib/jquery.min.js"&#62;&#60;/script&#62;<br />
+&#60;script src="lib/angular.min.js"&#62;&#60;/script&#62;<br />
+&#60;script src="app.js"&#62;&#60;/script&#62;<br />
+&#60;/body&#62;<br />
+&#60;/html&#62;<br />
+[/html]</p>
+<p><em>You can view the full code for the (completed) app <a href="https://github.com/kimberlythegeek/api-examples/blob/master/wikipedia/angular/index.html" target="_blank">here</a>.</em></p>
+<ol>
+<li>First we declare our Angular app <code>wikipediaApp</code> on the opening html tag.</li>
+<li>Next we declare the controller, <code>SearchController</code>, on the body tag using Controller As syntax</li>
+<li>In the original app, the show/hide of the search box was a jQuery event. Here we're using the Angular directives <code>ng-click</code> and <code>ng-if</code> for show/hide handling.</li>
+<li>We set <code>ng-model=searchTerm</code> on the input box so we can use its content in our Angular app.</li>
+<li> Two things here:
+<ul>
+<li>I replaced the <code>&#60;span&#62;</code> and <code>&#60;i&#62;</code> with <code>&#60;button&#62;</code> so that the search will be triggered by hitting <code>Enter</code>.</li>
+<li>We set <code>ng-click</code> to call our <code>search</code> function using the text from our input box.</li>
+</ul>
+</li>
+</ol>
+<h3>The JavaScript</h3>
+<p>For the sake of simplicity, I'll be using jQuery for the actual API call.</p>
+<p>In later posts, I'll cover <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">CORS</a> and cross-origin HTTP requests.</p>
+<p>The first goal when writing any code is to simply <em>get output</em>.</p>
+<p>This is especially true if you're learning a new language or skill.</p>
+<p>You really don't want to write a hundred lines of code only to find out that most basic functionality has errors.</p>
+<p>It's always best to work incrementally, breaking down your app or program into its most simple parts.</p>
+<p>[js]<br />
+SearchController.$inject = ['$scope', '$http', 'API_PATH'];<br />
+function SearchController($scope, $http, API_PATH){<br />
+  this.search = function(){<br />
+    $.getJSON(API_PATH + '?action=opensearch&callback=?&suggest=true&search=' + this.searchTerm, function(json){<br />
+      console.log(json);<br />
+    });<br />
+  };<br />
+}<br />
+[/js]</p>
+<p>I've basically copied the jQuery directly from the earlier and modified it to use the text from our input box.</p>
+<p>In our HTML, the <strong>model</strong> is <code>ctrl.searchTerm</code>, so we can reference it from <em>within</em> the controller using <code>this.searchTerm</code>.</p>
+<p>Here we are just logging the output to the console.</p>
+<p>Type something in, and hit Enter.</p>
+<p>You should see output like this:</p>
+<p><img src="images/wiki-angular-log.jpg" alt="angularjs wikipedia search app" width="700" height="390" /></p>
+<p>Yay!</p>
+<p>If it didn't work...then you're on your own.</p>
+<p>(Joking)</p>
+<p>I always recommend that if you run into problems to <em><a href="http://google.com" target="_blank">Google that Shit</a></em>, but feel free to ping me <a href="http://twitter.com/kimberlythegeek" target="_blank">@kimberlythegeek</a> if you have any questions.</p>
+<p><a href="posts/angularjs-wikipedia-search-pt-2/" target="_blank">[Continued in Part Two]</a></p>
+<p><em>You can view the code for the (completed) app on my <a href="http://github.com/kimberlythegeek/api-examples/tree/master/wikipedia/angular" target="_blank">GitHub repository</a>, and a live example on <a href="http://kimberlythegeek.github.io/api-examples/wikipedia/angular/" target="_blank">GitHub Pages</a>.</em></p>

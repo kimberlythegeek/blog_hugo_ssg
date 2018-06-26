@@ -1,0 +1,254 @@
+---
+layout: post
+status: publish
+published: true
+title: 'How the #$@& Do I Use an API?! - Wikipedia API Basics'
+author:
+  display_name: Kimberly
+  login: geek
+  email: email@kimberly.codes
+  url: http://kimberly.codes
+author_login: geek
+author_email: email@kimberly.codes
+author_url: http://kimberly.codes
+date: '2017-01-05 15:49:08 +0000'
+date_gmt: '2017-01-05 15:49:08 +0000'
+categories:
+- API
+- Tutorial
+- JavaScript
+- jQuery
+tags:
+- tutorial
+- api
+- api call
+- how do i use api
+- how to use api
+- javascript
+- jquery
+- json
+- jsonp
+- plain javascript
+- what is an api
+- wikipedia api
+comments:
+- id: 27
+  author: AngularJS Wikipedia Search App - Part One | Kimberly the Geek
+  author_email: ''
+  author_url: http://kimberlythegeek.com/angularjs-wikipedia-search-pt-1/
+  date: '2017-01-16 15:11:47 +0000'
+  date_gmt: '2017-01-16 22:11:47 +0000'
+  content: "[&#8230;] be using the stylesheet and index file from the Wikipedia App
+    referenced in How the #$@&#038; Do I Use an API?!, with a few [&#8230;]"
+---
+<h2>Wikipedia API Basics</h2>
+<p><a href="http://kimberlythegeek.com/wikipedia-api-basics/#what-is-api">1. So... What's an API?</a><br />
+<a href="http://kimberlythegeek.com/wikipedia-api-basics/#apis-galore">2. There's an API For That!</a><br />
+<a href="http://kimberlythegeek.com/wikipedia-api-basics/#now-what">3. Okay, I Know What an API Is...Now What?</a><br />
+<a href="http://kimberlythegeek.com/wikipedia-api-basics/#lets-do-it">4. Let's Do It!</a><br />
+<a href="http://kimberlythegeek.com/wikipedia-api-basics/#it-worked">5. It worked! (Hopefully)</a><br />
+<!--more--></p>
+<p></p>
+<h1>How the #$@& Do I Use an API?!</h1>
+<p>I'm taking a break from the WordPress development topic to delve into APIs. (Yay!)</p>
+<p>I'll be using the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">Wikipedia API</a> for this example.</p>
+<h2 id="what-is-api">1. So... What's an API?</h2>
+<p>APIs&#8212;application programming interfaces&#8212;are the current standard in utilizing information and technologies on the web. As taken from <a href="https://en.wikipedia.org/wiki/Application_programming_interface">Wikipedia</a>:</p>
+<blockquote><p>
+Just as a graphical user interface makes it easier for people to use programs, application programming interfaces make it easier for developers to use certain technologies in building applications. By abstracting the underlying implementation and <strong>only exposing objects or actions the developer needs</strong>, an API reduces the cognitive load on a programmer.
+</p></blockquote>
+<p>Sounds pretty damn useful. Without a technical example, though, the concept will likely seem very abstract if you've never used one before. (And we're getting to that!)</p>
+<h2 id="apis-galore">2. There's an API For That!</h2>
+<p>To give you a more concrete idea of what an API is and what you might use it for, here is a list of the types of APIs available (though this is by no means a comprehensive list):</p>
+<ul>
+<li>Weather APIs - obtain extensive weather data on specified location(s) <a href="https://www.programmableweb.com/news/top-weather-apis-depth-comparison/analysis/2015/01/12" target="_blank">Top Weather APIs</a></li>
+<li>Social Media APIs - display posts by a certain author or with a specified tag/search term. Create new posts, share posts. <a href="https://www.programmableweb.com/category/social/apis?category=20087" target="_blank">Social Media APIs</a></li>
+<li>Reference APIs - search resources such as <a href="http://www.dictionaryapi.com/" target="_blank">Merriam-Webster</a> or <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">Wikipedia</a></li>
+<li>And many, many, more: <a href="https://developer.github.com/v3/" target="_blank">GitHub</a>, <a href="https://developer.amazon.com/services-and-apis" target="_blank">Amazon</a>, <a href="https://www.dropbox.com/developers" target="_blank">Dropbox</a>, <a href="https://devcenter.heroku.com/categories/platform-api" target="_blank">Heroku</a>, <a href="https://api.slack.com/" target="_blank">Slack</a>, and even the <a href="http://gocode.colorado.gov/access-data-cim/" target="_blank">State of Colorado</a>.</li>
+</ul>
+<p>Basically, just about any type of online resource or technology you can think of has an API.</p>
+<h2 id="now-what">3. Okay, I Know What an API Is...Now What?</h2>
+<p>Once you have decided on an API (or maybe a few) that you'd like to use, you'll likely find that there is extensive documentation on what the API can do.</p>
+<p>When I was first learning how to use APIs, though, the most difficult part for me was finding <em>the actual code showing how to implement it</em>!</p>
+<p>I understood the API, how it worked, and what I could do with it, but WHERE THE HELL IS THE CODE SHOWS ME HOW TO DO IT?!</p>
+<p>I was surprised at how difficult it was to find just that.</p>
+<p>How you use APIs will differ between languages, of course.</p>
+<p>It took me some time just find applicable examples of API calls.</p>
+<h3>Unauthenticated vs. Authenticated API Calls</h3>
+<p>Most APIs allow both unauthenticated and authenticated API calls. Unauthenticated will be more limited as far as what you can do.</p>
+<p>For example, with an <strong>unauthenticated</strong> call to the Twitter API, you can display a timeline of tweets with the tag #MontyPython.</p>
+<p>With <strong>authenticated</strong> API access, you can tweet your favorite Monty Python quote.</p>
+<p><a href="https://twitter.com/pythonquotes/status/422919735727366144" target="_blank"><img src="http://kimberlythegeek.com/wp-content/uploads/2017/01/python-tweet.jpg" alt="monty python tweet pythonquotes twitter wikipedia api basics" width="638" height="283" class="aligncenter size-full wp-image-226" /></a><br />
+<a href="https://twitter.com/pythonquotes" target="_blank">@pythonquotes</a></p>
+<h2 id="lets-do-it">4. Let's Do It!</h2>
+<p>We'll start with unauthenticated API calls. We're going to do a basic search of Wikipedia.</p>
+<h5>Here's an example in plain ol' JavaScript, courtesy of <a href="https://github.com/gf3" target="_blank">@gf3 (Gianni Chiapetta)</a>:</h5>
+<p>[js]<br />
+/* script.js */</p>
+<p>var loadJSONP = (function(){<br />
+  var unique = 0;<br />
+  return function(url, callback, context) {<br />
+    // INIT<br />
+    var name = "_jsonp_" + unique++;<br />
+    if (url.match(/\?/)) url += "&callback="+name;<br />
+    else url += "?callback="+name;</p>
+<p>    // Create script<br />
+    var script = document.createElement('script');<br />
+    script.type = 'text/javascript';<br />
+    script.src = url;</p>
+<p>    // Setup handler<br />
+    window[name] = function(data){<br />
+      callback.call((context || window), data);<br />
+      document.getElementsByTagName('head')[0].removeChild(script);<br />
+      script = null;<br />
+      delete window[name];<br />
+    };</p>
+<p>    // Load JSON<br />
+    document.getElementsByTagName('head')[0].appendChild(script);<br />
+  };<br />
+})();<br />
+[/js]</p>
+<p>[html]<br />
+&#60;!-- index.html --&#62;</p>
+<p>&#60;html&#62;<br />
+  &#60;head&#62;</p>
+<p>  &#60;/head&#62;<br />
+  &#60;body&#62;<br />
+    &#60;script src="script.js"&#62;&#60;/script&#62;<br />
+    &#60;script&#62;<br />
+      loadJSONP(<br />
+        'https://en.wikipedia.org/w/api.php?action=opensearch&search=monty+python',<br />
+        function(data){<br />
+        	console.log(data);<br />
+        }<br />
+      );<br />
+    &#60;/script&#62;<br />
+  &#60;/body&#62;<br />
+&#60;/html&#62;<br />
+[/html]</p>
+<h5>And an example using jQuery:</h5>
+<p>[html]<br />
+&#60;!-- index.html --&#62;</p>
+<p>&#60;html&#62;<br />
+  &#60;head&#62;</p>
+<p>  &#60;/head&#62;<br />
+  &#60;body&#62;<br />
+    &#60;script src="jquery.min.js"&#62;&#60;/script&#62;<br />
+    &#60;script&#62;<br />
+    $.getJSON('https://en.wikipedia.org/w/api.php?action=opensearch&callback=?&suggest=true&search=monty+python', function(json){<br />
+      console.log(json);<br />
+    });<br />
+    &#60;/script&#62;<br />
+  &#60;/body&#62;<br />
+&#60;/html&#62;<br />
+[/html]</p>
+<p>My example is using the Wikipedia API, with the hard-coded search of <em>Monty Python</em>. If you test out this code, you'll see that the output looks something like this:</p>
+<p><img src="http://kimberlythegeek.com/wp-content/uploads/2017/01/wikipedia-api-search.jpg" alt="search wikipedia api basics json" width="621" height="792" class="aligncenter size-full wp-image-234" /></p>
+<h2 id="it-worked">5. It worked! (Hopefully)</h2>
+<p>So now I'll use a simple example to do something with this code besides printing it to the console.</p>
+<h5>Javascript:</h5>
+<p>[html]<br />
+&#60;html&#62;<br />
+  &#60;head&#62;</p>
+<p>  &#60;/head&#62;<br />
+  &#60;body&#62;<br />
+    &#60;table id="results"&#62;<br />
+    &#60;/table&#62;<br />
+    &#60;script&#62;<br />
+    // Credit to @gf3 (Gianni Chiapetta) for this snippet: https://github.com/gf3</p>
+<p>    var loadJSONP = (function(){<br />
+      'use strict';</p>
+<p>      var unique = 0;<br />
+      return function(url, callback, context) {<br />
+        // INIT<br />
+        var name = "_jsonp_" + unique++;<br />
+        if (url.match(/\?/)) url += "&callback="+name;<br />
+        else url += "?callback="+name;</p>
+<p>        // Create script<br />
+        var script = document.createElement('script');<br />
+        script.type = 'text/javascript';<br />
+        script.src = url;</p>
+<p>        // Setup handler<br />
+        window[name] = function(data){<br />
+          callback.call((context || window), data);<br />
+          document.getElementsByTagName('head')[0].removeChild(script);<br />
+          script = null;<br />
+          delete window[name];<br />
+        };</p>
+<p>        // Load JSON<br />
+        document.getElementsByTagName('head')[0].appendChild(script);<br />
+      };<br />
+    })();<br />
+    &#60;/script&#62;<br />
+    &#60;script&#62;<br />
+      loadJSONP(<br />
+        'https://en.wikipedia.org/w/api.php?action=opensearch&search=monty+python',<br />
+        function(data){<br />
+          console.log(data);<br />
+          // If results are found<br />
+          if(data[1].length &#62; 0) {<br />
+            // Titles of Results<br />
+            var title = data[1];<br />
+            // Descriptions of Results<br />
+            var description = data[2];<br />
+            // Links to Results<br />
+            var link = data[3];<br />
+            // Table to Hold Results<br />
+            var table = document.getElementById('results');</p>
+<p>            // Iterate through results<br />
+            for(var i=0; i&#60;data[1].length; i++) {<br />
+              var elemHTML = '&#60;tr&#62;&#60;td&#62;' + title[i] + '&#60;/td&#62;&#60;td&#62;' + description[i] + '&#60;/td&#62;&#60;td&#62;&#60;a href="' + link[i] + '"&#62;View Article&#60;/a&#62;&#60;/td&#62;&#60;/tr&#62;';<br />
+              document.getElementById('results').innerHTML += elemHTML;<br />
+            }<br />
+          }<br />
+          else console.log('results not found');<br />
+        }<br />
+      );<br />
+    &#60;/script&#62;<br />
+  &#60;/body&#62;<br />
+&#60;/html&#62;<br />
+[/html]</p>
+<p><a href="https://kimberlythegeek.github.io/api-examples/wikipedia/javascript-example/" target="_blank">View on GitHub Pages</a></p>
+<h5>jQuery:</h5>
+<p>[html]<br />
+&#60;html&#62;<br />
+  &#60;head&#62;<br />
+  &#60;/head&#62;<br />
+  &#60;body&#62;<br />
+    &#60;table id="results"&#62;<br />
+    &#60;/table&#62;<br />
+    &#60;script src="jquery.min.js"&#62;&#60;/script&#62;<br />
+    &#60;script&#62;<br />
+    $.getJSON('https://en.wikipedia.org/w/api.php?action=opensearch&callback=?&suggest=true&search=monty+python', function(json){<br />
+      console.log(json);<br />
+      // If results are found<br />
+      if(json[1].length &#62; 0) {<br />
+        // Titles of Results<br />
+        var title = json[1];<br />
+        // Descriptions of Results<br />
+        var description = json[2];<br />
+        // Links to Results<br />
+        var link = json[3];</p>
+<p>        // Iterate through results<br />
+        for(var i=0; i&#60;json[1].length; i++) {<br />
+          $('#results').append('&#60;tr&#62;&#60;td&#62;' + title[i] + '&#60;/td&#62;&#60;td&#62;' + description[i] + '&#60;/td&#62;&#60;td&#62;&#60;a href="' + link[i] + '"&#62;View Article&#60;/a&#62;&#60;/td&#62;&#60;/tr&#62;');<br />
+        }<br />
+      }<br />
+      else console.log('results not found');<br />
+    });<br />
+    &#60;/script&#62;<br />
+  &#60;/body&#62;<br />
+&#60;/html&#62;<br />
+[/html]</p>
+<p><a href="https://kimberlythegeek.github.io/api-examples/wikipedia/jquery-example/" target="_blank">View on GitHub Pages</a></p>
+<p>And this is what you should see:</p>
+<p><img src="http://kimberlythegeek.com/wp-content/uploads/2017/01/wikipedia-results-1024x222.jpg" alt="wikipedia api basics search results json" width="700" height="152" class="aligncenter size-large wp-image-239" /></p>
+<p>Here's a simple, but prettier example:</p>
+<p><a href="https://kimberlythegeek.github.io/api-examples/wikipedia/search-app/" target="_blank"><img src="http://kimberlythegeek.com/wp-content/uploads/2017/01/wikipedia-search-1024x565.jpg" alt="kimberlythegeek wikipedia api basics search app json javascript jquery" width="700" height="386" class="aligncenter size-large wp-image-242" /></a></p>
+<p><a href="https://kimberlythegeek.github.io/api-examples/wikipedia/search-app/" target="_blank">View on GitHub Pages</a></p>
+<p>You can view all of the code used in this article on my <a href="https://github.com/kimberlythegeek/api-examples/tree/master/wikipedia" target="_blank">GitHub repo</a>.</p>
+<hr />
+<p>APIs can be difficult to get the hang of in the beginning. As always, if you run into to problems, remember to <em><a href="http://google.com">Google that Shit</a></em>!</p>
+<p>Don't give up if it's difficult or frustrating! Challenging yourself is the best way to learn and to grow.</p>
+<p>Thanks for reading!</p>
+<p>/kimberly</p>
