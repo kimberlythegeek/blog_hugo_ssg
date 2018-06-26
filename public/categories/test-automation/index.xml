@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Automation on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/categories/test-automation/</link>
+    <description>Recent content in Test Automation on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Nov 2017 08:57:55 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/categories/test-automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Air Mozilla Presentation - Automating Web Accessibility Testing</title>
+      <link>http://www.kimberlythegeek.com/posts/mozilla-automating-accessibility-testing/</link>
+      <pubDate>Thu, 30 Nov 2017 08:57:55 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/mozilla-automating-accessibility-testing/</guid>
+      <description>To conclude my internship with Mozilla, I did a video presentation on Air Mozilla. This is a high-level overview  of the solution I designed to automate accessibility testing.
+Below are the slides, followed by the transcript and video.
+
+Automating Web Accessibility Testing Hi, my name is Kimberly Sereduck. I recently completed an internship with Mozilla through the GNOME Outreachy program. As part of the test engineering team, the goal of my internship was to automate web accessibility testing.</description>
+    </item>
+    
+    <item>
+      <title>Mozilla Internship: Conclusion and Retrospective</title>
+      <link>http://www.kimberlythegeek.com/posts/mozilla-internship-retrospective/</link>
+      <pubDate>Mon, 04 Sep 2017 09:08:50 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/mozilla-internship-retrospective/</guid>
+      <description>A Conclusion to My Internship When I began this internship three months ago, neither myself nor my mentor had a clear picture of what I would produce, or how the goals of the project would change as time progressed.
+The high-level goal of the internship was clear: to automate web accessibility testing. How best to do this, however, was not.
+The first few weeks, as well as the weeks prior, were mostly spent on research.</description>
+    </item>
+    
+    <item>
+      <title>Mozilla Internship: Translate Java to Python, Pt. 1</title>
+      <link>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-1/</link>
+      <pubDate>Tue, 11 Jul 2017 15:30:26 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-1/</guid>
+      <description>Translating a Java package into Python This is a pretty interesting task for me, to translate Java to Python, and is currently my focus in the internship. What I have found so far is that most of the methods will be much easier to implement in Python than in Java.
+I&#39;m glad I&#39;m interpreting Java into Python...and not the reverse!
+
+Take, for example, the get_contents() function:
+AXE.java
+[java]
+private static String getContents(final URL script) {</description>
+    </item>
+    
+    <item>
+      <title>Mozilla Internship: Diving into Test Automation with Python</title>
+      <link>http://www.kimberlythegeek.com/posts/test-automation-python/</link>
+      <pubDate>Sun, 25 Jun 2017 17:30:55 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/test-automation-python/</guid>
+      <description>Test Automation with Python The first week of my internship was spent primarily setting up my dev environment on the laptop I received.
+I had also never used a Mac before, so there were some basics to learn as well.
+Although, since MacOS is Unix-based now, all of the important things were pretty much the same.
+(I&#39;m worthless with a Windows command line)
+Once I had everything configured, I started fiddling with python and pytest.</description>
+    </item>
+    
+    <item>
+      <title>Mozilla Internship: An Introduction to Web Accessibility</title>
+      <link>http://www.kimberlythegeek.com/posts/intro-web-accessibility/</link>
+      <pubDate>Sun, 11 Jun 2017 21:18:57 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/intro-web-accessibility/</guid>
+      <description>Introduction to Web Accessibility Outreachy Some background: GNOME&#39;s Outreachy internship program is targeted at underrepresented groups in tech.
+A variety of open-source companies are involved.
+An employee of those companies can volunteer to be a mentor, and they design an internship with a particular topic and goal.
+Those who are both interested and eligible submit applications for that internship.
+The goal of the internship I was selected for is to automate regression testing for web accessibility.</description>
+    </item>
+    
+  </channel>
+</rss>

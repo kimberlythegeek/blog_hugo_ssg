@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kimberly the Geek">
+    <meta name="description" content="Kimberly Sereduck&#39;s Blog">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="http://www.kimberlythegeek.com">
+    <title>
+  Python Virtual Environments · Kimberly the Geek
+</title>
+
+    <link rel="canonical" href="http://www.kimberlythegeek.com/posts/python-virtual-environments/">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.css">
+    
+
+    <link rel="icon" type="image/png" href="http://www.kimberlythegeek.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.kimberlythegeek.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.kimberlythegeek.com">
+      Kimberly the Geek
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.kimberlythegeek.com/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.kimberlythegeek.com/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Python Virtual Environments</h1>
+      <h2 class="date">January 27, 2017</h2>
+
+      
+    </header>
+
+    <h1>Why Should I Use Python Virtual Environments?</h1>
+<p>It is <strong>always</strong> recommended to use python virtual environments for all of your projects. But why?</p>
+<p><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/" target="_blank">As The Hitchhiker's Guide to Python</a> says:</p>
+<blockquote><p>
+A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.</p>
+<p>It solves the &ldquo;Project X depends on version 1.x but, Project Y needs 4.x&rdquo; dilemma, and keeps your global site-packages directory clean and manageable.
+</p></blockquote>
+<p><!--more--></p>
+<h1>Create a Virtual Environment for Python</h1>
+<p><a href="#install-python">1. Install Python</a><br />
+<a href="#install-pip">2. Install Pip</a><br />
+<a href="#install-venv">3. Install virtualenv</a><br />
+<a href="#config-venv">4. Configure virtualenv</a></p>
+<h2 id="install-python">1. Install Python</h2>
+<pre>$ python --version</pre>
+<p>If nothing is printed to the console, install python:</p>
+<pre>$ sudo apt-get install python</pre>
+<p>As of writing this, I am running Python 2.7.12.</p>
+<h2 id="install-pip">2. Install Pip (if it isn't already)</h2>
+<p>In Python 2, <code>pip</code> is installed by default in <strong>Python 2.7.9 and later</strong>, and in Python 3, it is installed by default in <strong>Python 3.4 and later</strong>. <sup><a href="http://docs.python-guide.org/en/latest/starting/install/linux/" target="_blank">[1]</a></sup></p>
+<p>Check if pip is installed:</p>
+<pre>$ pip --version</pre>
+<p>If nothing is printed to the console, <a href="https://pip.pypa.io/en/latest/installing/" target="_blank">install pip</a>:</p>
+<p>Download <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">get-pip.py</a>. <sup><a href="https://pip.pypa.io/en/latest/installing/#id8" target="_blank">[2]</a></sup></p>
+<p>Run:</p>
+<pre>$ python get-pip.py</pre>
+<blockquote class="warning"><p>
+Be cautious if you're using a Python install that's managed by your operating system or another package manager. get-pip.py does not coordinate with those tools, and may leave your system in an inconsistent state.<sup><a href="https://pip.pypa.io/en/latest/installing/" target="_blank">[3]</a></sup>
+</p></blockquote>
+<h2 id="install-venv">3. Install virtualenv</h2>
+<p>Install the package:</p>
+<pre>
+$ pip install virtualenv
+</pre>
+<p>Create the directory and virtualenv for your project:</p>
+<pre>
+$ mkdir my-project
+$ cd my-project
+$ virtualenv venv
+</pre>
+<h2 id="config-venv">4. Configure virtualenv</h2>
+<p>For convenience, we'll follow <strong><a href="https://saurabh-kumar.com/blog/virtualenv-vs-virtualenvwrapper.html" target="_blank">this guide by Saurabh Kumar</a></strong> to create an alias for activating virtual environments, without relying on <code>virutalenvwrapper</code>.</p>
+<p>Add this line to your <code>~/.bashrc</code> file:</p>
+<pre>
+alias venv-activate='source venv/bin/activate && export PS1="(${PWD##*/}-venv)$_OLD_VIRTUAL_PS1"'
+</pre>
+<p>This will enable you to start your virtualenv (if it's within your project's <strong>venv</strong> folder) using <code>venv-activate</code>, instead of <code>source venv/bin/activate</code>.</p>
+<p><a href="https://saurabh-kumar.com/blog/virtualenv-vs-virtualenvwrapper.html" target="_blank">Saurabh Kumar</a> used the shortcut <code>sv</code>, but I chose to not use it, because sv is a shortcut that already exists in Ubuntu.</p>
+<p>You can make the shortcut anything you like, you may prefer something shorter than <code>venv-activate</code>.</p>
+<p>Open a new terminal, and test it out:</p>
+<pre>
+$ cd my-project
+$ venv-activate
+<strong>(my-project-venv)</strong> ~/my-project $
+</pre>
+<p>To deactivate the virtual environment, type <code>deactivate</code> at any time.</p>
+<h5>We're Done!</h5>
+<p>On to bigger and better things...</p>
+
+  </article>
+
+  <br/>
+
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2017    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

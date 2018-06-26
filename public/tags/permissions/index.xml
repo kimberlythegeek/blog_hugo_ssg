@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Permissions on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/permissions/</link>
+    <description>Recent content in Permissions on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Dec 2016 06:20:16 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/permissions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Wordpress on Linux (Debian/CentOS)</title>
+      <link>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</link>
+      <pubDate>Sun, 25 Dec 2016 06:20:16 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</guid>
+      <description>How to Install Wordpress on Linux 1. Ensure You Have a LAMP Stack Configured (Linux, Apache MySQL, PHP)
+2. Download &amp;amp; Extract Wordpress
+3. Create a new database for Wordpress
+4. Give Wordpress Proper Permissions
+5. Install Wordpress
+
+1. Ensure You Have a LAMP Stack Configured (Linux, Apache, MySQL, PHP) If you aren&#39;t sure if you have Apache, MySQL, and PHP on your system, verifying this is pretty easy.</description>
+    </item>
+    
+  </channel>
+</rss>

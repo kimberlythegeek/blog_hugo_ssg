@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kimberly the Geek">
+    <meta name="description" content="Kimberly Sereduck&#39;s Blog">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="http://www.kimberlythegeek.com">
+    <title>
+  Setting up a LAMP Stack (Linux, Apache, MySQL, PHP) · Kimberly the Geek
+</title>
+
+    <link rel="canonical" href="http://www.kimberlythegeek.com/posts/setting-lamp-stack/">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.css">
+    
+
+    <link rel="icon" type="image/png" href="http://www.kimberlythegeek.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.kimberlythegeek.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.kimberlythegeek.com">
+      Kimberly the Geek
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.kimberlythegeek.com/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.kimberlythegeek.com/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Setting up a LAMP Stack (Linux, Apache, MySQL, PHP)</h1>
+      <h2 class="date">December 23, 2016</h2>
+
+      
+    </header>
+
+    <p><a href="posts/setting-lamp-stack/#install-apache">1. Install Apache</a><br />
+<a href="posts/setting-lamp-stack/#install-mysql">2. Install MySQL</a><br />
+<a href="posts/setting-lamp-stack/#install-php">3. Install PHP</a><br />
+<a href="posts/setting-lamp-stack/#verify-install">4. Verify LAMP Stack</a><br />
+<!--more--></p>
+<div id="install-apache">
+<h2>1. Install Apache</h2>
+</div>
+<p>Install the package:<br />
+<strong>Debian/Ubuntu</strong></p>
+<pre>sudo apt-get install apache2</pre>
+<p><strong>Fedora/CentOS/SUSE Systems</strong></p>
+<pre>yum install httpd</pre>
+<p>And start the service:</p>
+<pre>sudo service apache2 start</pre>
+<p>or</p>
+<pre>sudo service httpd start</pre>
+<p>&nbsp;</p>
+<div id="install-mysql">
+<h2>2. Install MySQL</h2>
+</div>
+<p><strong>Debian/Ubuntu</strong></p>
+<pre>$ sudo apt-get install mysql-server
+$ sudo mysql_secure_installation
+$ sudo mysql_install_db
+
+$ sudo service mysql start</pre>
+<p><strong>CentOS/Fedora/SUSE</strong></p>
+<pre>$ sudo yum install mysql-server
+$ sudo service mysqld start
+$ sudo /usr/bin/mysql_secure_installation</pre>
+<p>The <code>mysql_secure_installation</code> command runs the setup for MySQL.</p>
+<p>This allows you to set up a root password, and a few other configuration options.</p>
+<div id="install-php">
+<h2>3. Install PHP</h2>
+</div>
+<p><strong>Debian</strong></p>
+<pre>sudo apt-get install php5 libapache2-mod-php5</pre>
+<p><strong>CentOS/Fedora/SUSE</strong></p>
+<pre>sudo yum install php php-mysql</pre>
+<div id="verify-install">
+<h2>4. Verify LAMP Stack</h2>
+</div>
+<p>You can verify your Apache installation by visiting <code>http://localhost</code> in your browser.</p>
+<p>If installed correctly, and the service is running, you will see a message saying "It works!"<br />
+<br/><br />
+<img class="aligncenter wp-image-53 size-full" src="images/apache-it-works1.jpg" width="635" height="177" alt="lamp stack apache-it-works"/></p>
+<p>To verify your PHP installation, create the following file:</p>
+<pre>sudo vim /var/www/html/info.php</pre>
+<p>and add this line:</p>
+<pre><?php phpinfo(); ?></pre>
+<p>Now navigate to <code>http://localhost/info.php</code>. You should see a page displaying all of the configuration information for PHP on your system.</p>
+<p><img class="aligncenter wp-image-52 size-medium" src="images/phpinfo.jpg" width="296" height="300" alt="lamp stack phpinfo"/></p>
+<p>That's it!</p>
+<p>If you do encounter any errors, your best bet is to <a href="http://google.com"><em>Google that shit</em></a>!</p>
+<p>Chances are high that question has been asked and answered on <a href="http://stackoverflow.com">Stack Overflow</a>.</p>
+<p>Thanks for reading!</p>
+<p>/kimberly</p>
+
+  </article>
+
+  <br/>
+
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2017    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modular on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/modular/</link>
+    <description>Recent content in Modular on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Nov 2016 17:58:41 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/modular/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What Makes a Great Software Developer?</title>
+      <link>http://www.kimberlythegeek.com/posts/what-makes-a-great-software-developer/</link>
+      <pubDate>Wed, 02 Nov 2016 17:58:41 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/what-makes-a-great-software-developer/</guid>
+      <description>Work Ethic? Teamwork? Communication? These are some of the most cited skills on r&amp;eacute;sum&amp;eacute;s, and traits all employers look for when hiring. This is true, whether they&#39;re looking for a Database Administrator or a cashier.
+So what skills are more specific to software development?
+What distinguishes a good software developer from a great one?
+&amp;nbsp;
+It all begins with one&#39;s Standard of Quality.
+Truth be told, as long as they put the time and effort into it, most anyone can learn to code.</description>
+    </item>
+    
+  </channel>
+</rss>

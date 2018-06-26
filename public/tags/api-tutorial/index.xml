@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api Tutorial on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/api-tutorial/</link>
+    <description>Recent content in Api Tutorial on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Jan 2017 15:11:39 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/api-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AngularJS Wikipedia Search App - Part One</title>
+      <link>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</link>
+      <pubDate>Mon, 16 Jan 2017 15:11:39 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</guid>
+      <description>Build a Wikipedia Search App With AngularJS Part One - Get Output In the previous post, I showed how to make unauthenticated API requests to the Wikipedia API.
+In this tutorial, I&#39;m going to rebuild the Wikipedia Search App using AngularJS.
+Here&#39;s what we&#39;re going to start with:
+[js]
+// app.js
+(function(){
+&#39;use strict&#39;;
+ angular.module(&#39;wikipediaApp&#39;, [])
+.constant(&#39;API_PATH&#39;, &#39;https://en.wikipedia.org/w/api.php&#39;)
+.controller(&#39;SearchController&#39;, SearchController);
+ SearchController.$inject = [&#39;$scope&#39;, &#39;$http&#39;, &#39;API_PATH&#39;];
+function SearchController($scope, $http, API_PATH){</description>
+    </item>
+    
+  </channel>
+</rss>
