@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.kimberlythegeek.com/about/</loc>
+    <lastmod>2018-06-25T13:39:02-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.kimberlythegeek.com/posts/mozilla-automating-accessibility-testing/</loc>
     <lastmod>2017-11-30T08:57:55+00:00</lastmod>
   </url>
@@ -158,13 +163,13 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/angularjs/</loc>
+    <loc>http://www.kimberlythegeek.com/categories/angularjs/</loc>
     <lastmod>2017-01-25T12:00:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/angularjs/</loc>
+    <loc>http://www.kimberlythegeek.com/tags/angularjs/</loc>
     <lastmod>2017-01-25T12:00:21+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -176,14 +181,14 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/api/</loc>
-    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/categories/api/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/api/</loc>
-    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/api/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -320,19 +325,13 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/javascript/</loc>
-    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.kimberlythegeek.com/categories/javascript/</loc>
     <lastmod>2017-07-25T16:26:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/jquery/</loc>
+    <loc>http://www.kimberlythegeek.com/tags/javascript/</loc>
     <lastmod>2017-01-25T12:00:21+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -344,14 +343,20 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/json/</loc>
-    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/jquery/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.kimberlythegeek.com/categories/json/</loc>
     <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/json/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -363,7 +368,7 @@
   
   <url>
     <loc>http://www.kimberlythegeek.com/</loc>
-    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <lastmod>2018-06-25T13:39:02-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -374,14 +379,14 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/linux/</loc>
-    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/categories/linux/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/linux/</loc>
-    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/linux/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -434,14 +439,14 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/php/</loc>
-    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/categories/php/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/php/</loc>
-    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/php/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -470,14 +475,14 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/python/</loc>
-    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/categories/python/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/python/</loc>
-    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/python/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -518,25 +523,25 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/test-automation/</loc>
-    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.kimberlythegeek.com/categories/test-automation/</loc>
     <lastmod>2017-11-30T08:57:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/theme-development/</loc>
-    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/test-automation/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.kimberlythegeek.com/categories/theme-development/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/theme-development/</loc>
     <lastmod>2016-12-29T15:26:18+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -548,14 +553,14 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/tutorial/</loc>
-    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/categories/tutorial/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/tutorial/</loc>
-    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <loc>http://www.kimberlythegeek.com/tags/tutorial/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -662,13 +667,13 @@
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/tags/wordpress/</loc>
+    <loc>http://www.kimberlythegeek.com/categories/wordpress/</loc>
     <lastmod>2016-12-29T15:26:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.kimberlythegeek.com/categories/wordpress/</loc>
+    <loc>http://www.kimberlythegeek.com/tags/wordpress/</loc>
     <lastmod>2016-12-29T15:26:18+00:00</lastmod>
     <priority>0</priority>
   </url>
