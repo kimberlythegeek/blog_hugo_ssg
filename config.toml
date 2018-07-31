@@ -2,7 +2,7 @@ baseurl = "http://www.kimberlythegeek.com"
 title = "Kimberly the Geek"
 
 theme = "coder"
-
+publishDir = "public_html"
 languagecode = "en"
 
 paginate = 10
