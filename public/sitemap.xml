@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.kimberlythegeek.com/about/</loc>
+    <lastmod>2018-06-25T13:39:02-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.kimberlythegeek.com/posts/mozilla-automating-accessibility-testing/</loc>
     <lastmod>2017-11-30T08:57:55+00:00</lastmod>
   </url>
@@ -363,7 +368,7 @@
   
   <url>
     <loc>http://www.kimberlythegeek.com/</loc>
-    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <lastmod>2018-06-25T13:39:02-06:00</lastmod>
     <priority>0</priority>
   </url>
   
