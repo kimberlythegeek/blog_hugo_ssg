@@ -11,7 +11,7 @@
         </div> -->
       {{ end }}
       <span>{{ .Date.Format "January 2, 2006" }}</span>
-      {{ if eq .Title "fortune | cowthink"}}
+      {{ if or (eq .Title "fortune | cowthink") (eq .Title "fortune | cowsay") }}
         <div class="cowthink-container">
           {{ .Content }}
         </div>
