@@ -92,3 +92,6 @@ iframe, img {
 .social-links a:hover i {
   border-color: #fde74c;
 }
+.highlight pre {
+  background-color: rgba(0,0,0,0)!important;
+}
