@@ -92,6 +92,7 @@ iframe, img {
 .social-links a:hover i {
   border-color: #fde74c;
 }
-.highlight pre {
+.cowthink-container .highlight pre,
+.cowthink-container .highlight code {
   background-color: rgba(0,0,0,0)!important;
 }
