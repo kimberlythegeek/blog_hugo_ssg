@@ -1,0 +1,39 @@
+{{ define "content" }}
+  {{ range first 1 .Pages }}
+  <div class="row justify-content-center">
+  <main>
+      <div class='site-info'>
+        <h1>kimberlythegeek</h1>
+        <h2>software engineer</h2>
+        <h3>&#8226; accessibility &#8226; interoperability &#8226; automation &#8226;</h3>
+      </div>
+    </main>
+    <article class="col-10 featured-article">
+      <div class="row justify-content-center">
+        <div class="article-body col-8">
+          <div>
+            <p>
+            <img src='{{ .Params.featured_image }}' alt=''/>
+            </p>
+            <h2 class="featured-article">{{ .Title }}</h2>
+            <p class='text-center'>{{ .Date.Format "January 2, 2006" }}</p>
+            {{ if or (eq .Title "fortune | cowthink") (eq .Title "fortune | cowsay") }}
+              <div class="cowthink">
+                {{ .Content }}
+              </div>
+            {{ else }}
+            <p>
+              {{ .Summary }}
+            </p>
+            <p class='text-right'>
+              <a href="{{ .URL }}">read more...</a>
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  {{ end }}
+{{ end }}

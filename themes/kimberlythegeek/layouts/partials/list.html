@@ -1,0 +1,33 @@
+<section class="container list">
+  <div class="posts-list row justify-content-center">
+    <div class="post col-8">
+      <h1 class="title sr-only">{{ .Title }}</h1>
+      <ul class="list-unstyled">
+        {{ partial "pagination.html" . }}
+        {{ range .Paginator.Pages }}
+        <li>
+          <p>
+          <img src='{{ .Params.featured_image }}' alt=''/>
+          </p>
+          <h2>{{ .Title }}</h2>
+          <p class='text-center'>{{ .Date.Format "January 2, 2006" }}</p>
+          {{ if or (eq .Title "fortune | cowthink") (eq .Title "fortune | cowsay") }}
+            <div class="cowthink">
+              {{ .Content }}
+            </div>
+          {{ else }}
+          <p>
+            {{ .Summary }}
+          </p>
+          <p class='text-right'>
+            <a href="{{ .URL }}">read more...</a>
+          </p>
+          {{ end }}
+        </li>
+        {{ end }}
+      {{ partial "pagination.html" . }}
+      </ul>
+    </div>
+  </div>
+
+</section>

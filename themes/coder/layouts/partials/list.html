@@ -1,7 +1,8 @@
+{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
 <section class="container list">
   <h1 class="title">{{ .Title }}</h1>
   <ul>
-    {{ range .Paginator.Pages }}
+    {{ range .Paginate.Pages }}
     <li>
       <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a>
     </li>

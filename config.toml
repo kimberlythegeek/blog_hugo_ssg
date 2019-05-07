@@ -1,7 +1,7 @@
 baseurl = "http://www.kimberlythegeek.com"
 title = "Kimberly the Geek"
 
-theme = "coder"
+theme = "kimberlythegeek"
 publishDir = "public_html"
 languagecode = "en"
 
@@ -29,6 +29,7 @@ pygmentscodefencesguesssyntax = true
     # RTL support
     rtl = false
 
+
 [blackfriday]
     hrefTargetBlank = true
 [[params.specialties]]
@@ -53,10 +54,14 @@ pygmentscodefencesguesssyntax = true
     url = "https://www.linkedin.com/in/kimberlythegeek/"
     icon = "linkedin"
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     weight = 1
+    url  = "/"
+[[menu.main]]
+    name = "Posts"
+    weight = 2
     url  = "/posts/"
 [[menu.main]]
+    weight = 3
     name = "About"
-    weight = 2
     url = "/about/"
