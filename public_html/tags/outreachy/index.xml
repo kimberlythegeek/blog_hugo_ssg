@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outreachy on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/outreachy/</link>
+    <description>Recent content in Outreachy on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Jul 2017 16:26:36 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/outreachy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mozilla Internship: Translate Java to Python, Pt. 2</title>
+      <link>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-2/</link>
+      <pubDate>Tue, 25 Jul 2017 16:26:36 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-2/</guid>
+      <description>Continued from Part 1
+While I began writing my package as a direct, one-to-one translation of the Java package, my package turned out to look very different.
+Java and Python are, after all, very different languages. I found some methods to be unnecessary in python, and chose to not use the same design pattern as axe-selenium-java.
+The Java package, written by Deque Labs, uses the Builder design pattern.
+I wrote the methods used by the Builder class to be methods of the Axe class instead.</description>
+    </item>
+    
+  </channel>
+</rss>

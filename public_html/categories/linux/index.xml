@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/categories/linux/</link>
+    <description>Recent content in Linux on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Jan 2017 15:42:53 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Virtual Environments</title>
+      <link>http://www.kimberlythegeek.com/posts/python-virtual-environments/</link>
+      <pubDate>Fri, 27 Jan 2017 15:42:53 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/python-virtual-environments/</guid>
+      <description>Why Should I Use Python Virtual Environments? It is always recommended to use python virtual environments for all of your projects. But why?
+As The Hitchhiker&#39;s Guide to Python says:
+ A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
+It solves the &amp;ldquo;Project X depends on version 1.x but, Project Y needs 4.x&amp;rdquo; dilemma, and keeps your global site-packages directory clean and manageable.</description>
+    </item>
+    
+    <item>
+      <title>Install Wordpress on Linux (Debian/CentOS)</title>
+      <link>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</link>
+      <pubDate>Sun, 25 Dec 2016 06:20:16 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</guid>
+      <description>How to Install Wordpress on Linux 1. Ensure You Have a LAMP Stack Configured (Linux, Apache MySQL, PHP)
+2. Download &amp;amp; Extract Wordpress
+3. Create a new database for Wordpress
+4. Give Wordpress Proper Permissions
+5. Install Wordpress
+
+1. Ensure You Have a LAMP Stack Configured (Linux, Apache, MySQL, PHP) If you aren&#39;t sure if you have Apache, MySQL, and PHP on your system, verifying this is pretty easy.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a LAMP Stack (Linux, Apache, MySQL, PHP)</title>
+      <link>http://www.kimberlythegeek.com/posts/setting-lamp-stack/</link>
+      <pubDate>Fri, 23 Dec 2016 19:26:37 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/setting-lamp-stack/</guid>
+      <description>1. Install Apache
+2. Install MySQL
+3. Install PHP
+4. Verify LAMP Stack
+
+1. Install Apache  Install the package:
+Debian/Ubuntu
+sudo apt-get install apache2 Fedora/CentOS/SUSE Systems
+yum install httpd And start the service:
+sudo service apache2 start or
+sudo service httpd start &amp;nbsp;
+2. Install MySQL  Debian/Ubuntu
+$ sudo apt-get install mysql-server$ sudo mysql_secure_installation$ sudo mysql_install_db$ sudo service mysql start CentOS/Fedora/SUSE
+$ sudo yum install mysql-server$ sudo service mysqld start$ sudo /usr/bin/mysql_secure_installation The mysql_secure_installation command runs the setup for MySQL.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/categories/php/</link>
+    <description>Recent content in Php on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Dec 2016 15:26:18 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Custom Sidebar - Child Themes in Wordpress</title>
+      <link>http://www.kimberlythegeek.com/posts/custom-sidebar-wordpress/</link>
+      <pubDate>Thu, 29 Dec 2016 15:26:18 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/custom-sidebar-wordpress/</guid>
+      <description>1. Register Custom Sidebar in functions.php
+2. Create Custom Sidebar File
+3. Call Custom Sidebar!
+4. Style as Desired
+
+The nice thing about child themes is that it gives you a full theme as a base, while also allowing for endless customization.
+Any file that you write in your child theme, e.g. functions.php, header.php, sidebar.php, will overwrite the parent theme&#39;s file.
+It&#39;s worth mentioning that this doesn&#39;t seem to be working on my local WordPress install, with theme Twenty Seventeen.</description>
+    </item>
+    
+  </channel>
+</rss>

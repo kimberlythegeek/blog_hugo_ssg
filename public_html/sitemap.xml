@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/accessibility-matters/</loc>
+    <lastmod>2018-12-11T15:49:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/completely-different/</loc>
+    <lastmod>2018-11-07T21:00:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-8/</loc>
+    <lastmod>2018-08-27T19:58:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/about/</loc>
+    <lastmod>2018-06-25T13:39:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/mozilla-automating-accessibility-testing/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/mozilla-internship-retrospective/</loc>
+    <lastmod>2017-09-04T09:08:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/writing-a-pytest-fixture/</loc>
+    <lastmod>2017-08-21T16:00:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/mozilla-internship-writing-pip-installable-package/</loc>
+    <lastmod>2017-08-13T16:46:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-2/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/translate-java-to-python-pt-1/</loc>
+    <lastmod>2017-07-11T15:30:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/test-automation-python/</loc>
+    <lastmod>2017-06-25T17:30:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/intro-web-accessibility/</loc>
+    <lastmod>2017-06-11T21:18:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-7/</loc>
+    <lastmod>2017-02-16T10:31:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/scrape-stack-overflow-jobs/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-6/</loc>
+    <lastmod>2017-02-03T05:39:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/python-virtual-environments/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-5/</loc>
+    <lastmod>2017-01-26T13:03:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-2/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-4/</loc>
+    <lastmod>2017-01-20T10:22:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</loc>
+    <lastmod>2017-01-16T15:11:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-3/</loc>
+    <lastmod>2017-01-10T07:21:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/wikipedia-api-basics/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink-2/</loc>
+    <lastmod>2016-12-31T06:47:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/custom-sidebar-wordpress/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/fortune-cowthink/</loc>
+    <lastmod>2016-12-29T07:26:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/creating-child-themes-wordpress/</loc>
+    <lastmod>2016-12-27T15:56:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/setting-lamp-stack/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/what-makes-a-great-software-developer/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/accessibility/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/accessibility-testing/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/air-mozilla/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/angular-1/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/angular-app/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/angularjs/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/angularjs/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/apache/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/api/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/api/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/api-call/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/api-tutorial/</loc>
+    <lastmod>2017-01-16T15:11:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/axe/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/axe-core/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/axe-selenium-python/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/centos/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/child-theme/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/child-theme-header/</loc>
+    <lastmod>2016-12-27T15:56:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/chown/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/clean-code/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/debian/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/deque/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/deque-labs/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/fedora/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/great-software-developer/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/how-do-apis-work/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/how-do-i-create-a-virtual-environment/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/how-do-i-make-api-call/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/how-do-i-use-api/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/how-to-use-api/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/humor/</loc>
+    <lastmod>2018-08-27T19:58:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/javascript/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/javascript/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/jquery/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/jquery/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/json/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/json/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/jsonp/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/</loc>
+    <lastmod>2018-12-11T15:49:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/lamp/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/linux/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/linux/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/localhost/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/modular/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/motivation/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/mozilla/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/mysql/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/opinion/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/outreachy/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/permissions/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/php/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/php/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/pip/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/plain-javascript/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/posts/</loc>
+    <lastmod>2018-12-11T15:49:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/pytest/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/python/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/python/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/python-packaging/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/quality/</loc>
+    <lastmod>2016-11-02T17:58:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/quotes/</loc>
+    <lastmod>2017-02-16T10:31:38+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/sass/</loc>
+    <lastmod>2016-12-27T15:56:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/stylus/</loc>
+    <lastmod>2016-12-27T15:56:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/test-automation/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/test-automation/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/theme-development/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/theme-development/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/translate-java-to-python/</loc>
+    <lastmod>2017-07-25T16:26:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/tutorial/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/tutorial/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/ubuntu/</loc>
+    <lastmod>2016-12-23T19:26:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/uncategorized/</loc>
+    <lastmod>2017-08-21T16:00:09+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/venv/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/virtual-environment/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/virtualenv/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/virtualenvwrapper/</loc>
+    <lastmod>2017-01-27T15:42:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/watch/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wcag/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/web-accessibility/</loc>
+    <lastmod>2017-11-30T08:57:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/web-crawler/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/web-development/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/web-scraping/</loc>
+    <lastmod>2017-02-10T09:35:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/what-is-an-api/</loc>
+    <lastmod>2017-01-05T15:49:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wikipedia/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wikipedia-api/</loc>
+    <lastmod>2017-01-25T12:00:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wikipedia-search/</loc>
+    <lastmod>2017-01-16T15:11:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/wisdom/</loc>
+    <lastmod>2017-01-26T13:03:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wordpress/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/categories/wordpress/</loc>
+    <lastmod>2016-12-29T15:26:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wordpress-doesnt-have-permission/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wordpress-install/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kimberlythegeek.com/tags/wordpress-write-permissions/</loc>
+    <lastmod>2016-12-25T06:20:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

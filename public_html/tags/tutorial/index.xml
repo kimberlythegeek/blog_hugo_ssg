@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Jan 2017 15:42:53 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Virtual Environments</title>
+      <link>http://www.kimberlythegeek.com/posts/python-virtual-environments/</link>
+      <pubDate>Fri, 27 Jan 2017 15:42:53 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/python-virtual-environments/</guid>
+      <description>Why Should I Use Python Virtual Environments? It is always recommended to use python virtual environments for all of your projects. But why?
+As The Hitchhiker&#39;s Guide to Python says:
+ A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.
+It solves the &amp;ldquo;Project X depends on version 1.x but, Project Y needs 4.x&amp;rdquo; dilemma, and keeps your global site-packages directory clean and manageable.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Wikipedia Search App - Part Two</title>
+      <link>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-2/</link>
+      <pubDate>Wed, 25 Jan 2017 12:00:21 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-2/</guid>
+      <description>Continued from Part One
+
+Build a Wikipedia Search App With AngularJS Part Two - Use Output So, if everything went as expected in the first part, you should be getting output in your console.
+Now we need to actually display the output on the page.
+The JavaScript We first need to modify our app so that it does something with the data besides printing to the console.
+[js]
+// app.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Wikipedia Search App - Part One</title>
+      <link>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</link>
+      <pubDate>Mon, 16 Jan 2017 15:11:39 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</guid>
+      <description>Build a Wikipedia Search App With AngularJS Part One - Get Output In the previous post, I showed how to make unauthenticated API requests to the Wikipedia API.
+In this tutorial, I&#39;m going to rebuild the Wikipedia Search App using AngularJS.
+Here&#39;s what we&#39;re going to start with:
+[js]
+// app.js
+(function(){
+&#39;use strict&#39;;
+ angular.module(&#39;wikipediaApp&#39;, [])
+.constant(&#39;API_PATH&#39;, &#39;https://en.wikipedia.org/w/api.php&#39;)
+.controller(&#39;SearchController&#39;, SearchController);
+ SearchController.$inject = [&#39;$scope&#39;, &#39;$http&#39;, &#39;API_PATH&#39;];
+function SearchController($scope, $http, API_PATH){</description>
+    </item>
+    
+    <item>
+      <title>How the #$@&amp; Do I Use an API?! - Wikipedia API Basics</title>
+      <link>http://www.kimberlythegeek.com/posts/wikipedia-api-basics/</link>
+      <pubDate>Thu, 05 Jan 2017 15:49:08 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/wikipedia-api-basics/</guid>
+      <description>Wikipedia API Basics 1. So... What&#39;s an API?
+2. There&#39;s an API For That!
+3. Okay, I Know What an API Is...Now What?
+4. Let&#39;s Do It!
+5. It worked! (Hopefully)
+
+
+How the #$@&amp; Do I Use an API?! I&#39;m taking a break from the WordPress development topic to delve into APIs. (Yay!)
+I&#39;ll be using the Wikipedia API for this example.
+1. So... What&#39;s an API? APIs&amp;#8212;application programming interfaces&amp;#8212;are the current standard in utilizing information and technologies on the web.</description>
+    </item>
+    
+    <item>
+      <title>Custom Sidebar - Child Themes in Wordpress</title>
+      <link>http://www.kimberlythegeek.com/posts/custom-sidebar-wordpress/</link>
+      <pubDate>Thu, 29 Dec 2016 15:26:18 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/custom-sidebar-wordpress/</guid>
+      <description>1. Register Custom Sidebar in functions.php
+2. Create Custom Sidebar File
+3. Call Custom Sidebar!
+4. Style as Desired
+
+The nice thing about child themes is that it gives you a full theme as a base, while also allowing for endless customization.
+Any file that you write in your child theme, e.g. functions.php, header.php, sidebar.php, will overwrite the parent theme&#39;s file.
+It&#39;s worth mentioning that this doesn&#39;t seem to be working on my local WordPress install, with theme Twenty Seventeen.</description>
+    </item>
+    
+    <item>
+      <title>Child Themes in Wordpress - Getting Started</title>
+      <link>http://www.kimberlythegeek.com/posts/creating-child-themes-wordpress/</link>
+      <pubDate>Tue, 27 Dec 2016 15:56:16 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/creating-child-themes-wordpress/</guid>
+      <description>The Basics of Child Themes There are many reasons why you should create child themes when using any customization. If you modify the CSS or PHP directly in a Wordpress theme, and later update the theme, all of your changes will be lost.
+With child themes, you can update the parent themes without overwriting your custom styles.
+
+I prefer to use a theme released directly from Wordpress.org, such as Twenty Fourteen, Twenty Fifteen, Twenty Sixteen, etc.</description>
+    </item>
+    
+    <item>
+      <title>Install Wordpress on Linux (Debian/CentOS)</title>
+      <link>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</link>
+      <pubDate>Sun, 25 Dec 2016 06:20:16 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/install-wordpress-linux/</guid>
+      <description>How to Install Wordpress on Linux 1. Ensure You Have a LAMP Stack Configured (Linux, Apache MySQL, PHP)
+2. Download &amp;amp; Extract Wordpress
+3. Create a new database for Wordpress
+4. Give Wordpress Proper Permissions
+5. Install Wordpress
+
+1. Ensure You Have a LAMP Stack Configured (Linux, Apache, MySQL, PHP) If you aren&#39;t sure if you have Apache, MySQL, and PHP on your system, verifying this is pretty easy.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a LAMP Stack (Linux, Apache, MySQL, PHP)</title>
+      <link>http://www.kimberlythegeek.com/posts/setting-lamp-stack/</link>
+      <pubDate>Fri, 23 Dec 2016 19:26:37 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/setting-lamp-stack/</guid>
+      <description>1. Install Apache
+2. Install MySQL
+3. Install PHP
+4. Verify LAMP Stack
+
+1. Install Apache  Install the package:
+Debian/Ubuntu
+sudo apt-get install apache2 Fedora/CentOS/SUSE Systems
+yum install httpd And start the service:
+sudo service apache2 start or
+sudo service httpd start &amp;nbsp;
+2. Install MySQL  Debian/Ubuntu
+$ sudo apt-get install mysql-server$ sudo mysql_secure_installation$ sudo mysql_install_db$ sudo service mysql start CentOS/Fedora/SUSE
+$ sudo yum install mysql-server$ sudo service mysqld start$ sudo /usr/bin/mysql_secure_installation The mysql_secure_installation command runs the setup for MySQL.</description>
+    </item>
+    
+  </channel>
+</rss>

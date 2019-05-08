@@ -1,0 +1,102 @@
+<html>
+  <head><meta charset="UTF-8">
+<meta name='description' content='Just a geek blogging about geeky things'>
+<meta name='keywords' content='programming,python,javascript,linux,accessibility,apache,mysql,angular,mozilla'>
+<meta name='author' content='Kimberly Sereduck'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="http://www.kimberlythegeek.com/css/bootstrap.css">
+<link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.css"><title>Mozilla Internship: Writing a pytest Fixture</title>
+  </head>
+
+  <body><header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link site-brand" href="http://www.kimberlythegeek.com/">kimberlythegeek</a>
+        <div class="flex-row-reverse" id="navbarNav">
+          <ul class="nav">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/">Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/posts/">Posts</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/about/">About</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+</header><main>
+      <div id="content" class="container-fluid">
+        <div class="row justify-content-center">
+          <article class="col-10 featured-article">
+            <div class=" article-header">
+              <h1>Mozilla Internship: Writing a pytest Fixture</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="article-body col-8">
+                <p>Writing a pytest fixture was actually much easier to do than I expected.</p>
+<p>I did find, however, that the documentation on custom pytest fixtures was not very applicable to my situation.</p>
+<p>I instead spent quite a lot of time looking at other pytest fixtures, such as <a href="https://github.com/pytest-dev/pytest-html" target="_blank">pytest-html</a>, <a href="https://github.com/pytest-dev/pytest-selenium" target="_blank">pytest-selenium</a>, and <a href="https://github.com/pytest-dev/pytest-base-url" target="_blank">pytest-base-url</a>, trying to figure out how they worked.</p>
+<p>Having never used pytest fixtures&mdash;and being new to pytest&mdash;it was a bit of a struggle for me to really understand what was going on.</p>
+<p>The most applicable examples that I looked at were pytest-selenium and pytest-base-url.</p>
+<h3>pytest-selenium and pytest-base-url</h3>
+<p>The main purpose of the pytest-selenium package is that it takes care of the setup and tear down processes for you.</p>
+<p>The <code>selenium</code> fixture essentially instantiates and return a <code>webdriver</code> instance.</p>
+<p>The fixture also closes the instance for you at the conclusion of your test function.</p>
+<p>If <code>base_url</code> is defined in a config file or passed in as a command line argument, pytest-selenium will use this value and load the page automatically at the execution of your test function.</p>
+<p>Using pytest-selenium can simplify something like this:</p>
+<p>[python]<br />
+from selenium import webdriver</p>
+<p>def test_python_page_title():<br />
+    driver = webdriver.Firefox()<br />
+    driver.get("http://www.python.org")<br />
+    assert "Python" in driver.title<br />
+    driver.close()<br />
+[/python]</p>
+<p>to this:<br />
+[python]<br />
+def test_python_page(selenium):<br />
+    assert "Python" in selenium.title<br />
+[/python]</p>
+<p>While <code>pytest-selenium</code> has many more capabilities, and is a complex package, this seems to be the primary purpose, at least as I understand it.</p>
+<h3>pytest-axe</h3>
+<p><code>pytest-axe</code> is a pytest fixture similar to pytest-selenium, albeit it is extremely simple in comparison.</p>
+<p>This package takes a selenium instance and instantiates an instance of the Axe class for you.</p>
+<p>It also finds the <code>axe.min.js</code> script in the <code>axe-selenium-python</code> package, and Axe sets it as a class-level variable in its constructor.</p>
+<p>I decided to create this fixture to make it easier for users to integrate my axe-selenium-python API into their test suites.</p>
+<p>The easier it is to use, the more likely people are to use it.</p>
+<p>To illustrate just how basic this package is, this code is the entire functionality of the plugin:</p>
+<p><a href="https://github.com/kimberlythegeek/pytest-axe/blob/master/pytest_axe/pytest_axe.py" target="_blank">pytest_axe.py</a><br />
+[python]<br />
+import pytest<br />
+from axe_selenium_python import Axe</p>
+<p>@pytest.fixture<br />
+def axe(selenium, base_url):<br />
+    """Return an Axe instance based on context and options."""<br />
+    selenium.get(base_url)<br />
+yield Axe(selenium)<br />
+[/python]</p>
+<p>I originally implemented this fixture by adding it to <code>conftest.py</code> within the test files in my <code>axe-selenium-python</code> package.</p>
+<p>Again, I was surprised at how easy it was to get this to work. It did take some fiddling around, but altogether, very little time was spent on this.</p>
+<p>I moved this fixture into a package by itself, because I don't want users to have to manually add the fixture into their <code>conftest.py</code> file.</p>
+<p>At best, this would be quite annoying. More than likely, people just wouldn't use it.</p>
+
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+  
+</html>

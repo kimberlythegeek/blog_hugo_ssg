@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Aug 2017 16:00:09 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mozilla Internship: Writing a pytest Fixture</title>
+      <link>http://www.kimberlythegeek.com/posts/writing-a-pytest-fixture/</link>
+      <pubDate>Mon, 21 Aug 2017 16:00:09 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/writing-a-pytest-fixture/</guid>
+      <description>Writing a pytest fixture was actually much easier to do than I expected.
+I did find, however, that the documentation on custom pytest fixtures was not very applicable to my situation.
+I instead spent quite a lot of time looking at other pytest fixtures, such as pytest-html, pytest-selenium, and pytest-base-url, trying to figure out how they worked.
+Having never used pytest fixtures&amp;mdash;and being new to pytest&amp;mdash;it was a bit of a struggle for me to really understand what was going on.</description>
+    </item>
+    
+    <item>
+      <title>Mozilla Internship: Writing a pip Installable Package</title>
+      <link>http://www.kimberlythegeek.com/posts/mozilla-internship-writing-pip-installable-package/</link>
+      <pubDate>Sun, 13 Aug 2017 16:46:01 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/mozilla-internship-writing-pip-installable-package/</guid>
+      <description>Designing for the User The first part of this project was to create a rough draft of the package, and a set of both unit tests and integration tests.
+For the first several weeks, I only used the package locally from the project folder, which turned out to be much easier than writing a working, pip-installable package.
+So that was the next goal to accomplish&amp;mdash;but I also wanted to ensure to follow best practices and maintain stability.</description>
+    </item>
+    
+  </channel>
+</rss>

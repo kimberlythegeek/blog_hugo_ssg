@@ -1,0 +1,146 @@
+header {
+  height: 10em;
+}
+
+main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+footer {
+  height: 10em;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2.6rem;
+}
+
+h2 { font-size: 2em; }
+
+.article-body h2 {
+  font-style: italic;
+  color: #686868;
+}
+
+h2.featured-article {
+  color: black;
+  font-style: normal;
+  margin-bottom: 2.4;
+}
+.featured-article {
+  margin-top:2rem;
+}
+.featured-article p {
+  font-size: .9rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.featured-image img {
+  max-width: 50%;
+  margin: auto;
+  text-align:center;
+}
+
+p {
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  margin: 1em 0;
+}
+
+.cowthink pre {
+  margin: auto;
+}
+
+.site-info {
+  padding: 2rem;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+.site-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.site-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.site-info h3 {
+  font-size: 1rem;
+}
+header {
+  height: 2rem;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 4rem;
+  background: white;
+}
+
+.social-links ul {
+  width: 50%;
+  margin: auto;
+}
+.social-links li {
+  margin: auto;
+}
+.social-links a{
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid transparent;
+}
+.site-brand.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+
+.pagination {
+  margin: auto;
+  margin: 1.4rem auto;
+}
+.pagination ul {
+  margin: auto;
+}
+.pagination li {
+  width: 20px;
+  max-width: 20px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+.page-numbers {
+  padding-left: 5px;
+}
+.pagination i {
+  padding-top: 5px;
+  padding-left: 2px;
+}
+a:hover, a:focus,
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus {
+  border-bottom: 1px solid;
+}
+.container.list {
+  margin-bottom: 4rem;
+}

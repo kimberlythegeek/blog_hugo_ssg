@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wikipedia Api on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/wikipedia-api/</link>
+    <description>Recent content in Wikipedia Api on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 25 Jan 2017 12:00:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/wikipedia-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AngularJS Wikipedia Search App - Part Two</title>
+      <link>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-2/</link>
+      <pubDate>Wed, 25 Jan 2017 12:00:21 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-2/</guid>
+      <description>Continued from Part One
+
+Build a Wikipedia Search App With AngularJS Part Two - Use Output So, if everything went as expected in the first part, you should be getting output in your console.
+Now we need to actually display the output on the page.
+The JavaScript We first need to modify our app so that it does something with the data besides printing to the console.
+[js]
+// app.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Wikipedia Search App - Part One</title>
+      <link>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</link>
+      <pubDate>Mon, 16 Jan 2017 15:11:39 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/angularjs-wikipedia-search-pt-1/</guid>
+      <description>Build a Wikipedia Search App With AngularJS Part One - Get Output In the previous post, I showed how to make unauthenticated API requests to the Wikipedia API.
+In this tutorial, I&#39;m going to rebuild the Wikipedia Search App using AngularJS.
+Here&#39;s what we&#39;re going to start with:
+[js]
+// app.js
+(function(){
+&#39;use strict&#39;;
+ angular.module(&#39;wikipediaApp&#39;, [])
+.constant(&#39;API_PATH&#39;, &#39;https://en.wikipedia.org/w/api.php&#39;)
+.controller(&#39;SearchController&#39;, SearchController);
+ SearchController.$inject = [&#39;$scope&#39;, &#39;$http&#39;, &#39;API_PATH&#39;];
+function SearchController($scope, $http, API_PATH){</description>
+    </item>
+    
+    <item>
+      <title>How the #$@&amp; Do I Use an API?! - Wikipedia API Basics</title>
+      <link>http://www.kimberlythegeek.com/posts/wikipedia-api-basics/</link>
+      <pubDate>Thu, 05 Jan 2017 15:49:08 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/wikipedia-api-basics/</guid>
+      <description>Wikipedia API Basics 1. So... What&#39;s an API?
+2. There&#39;s an API For That!
+3. Okay, I Know What an API Is...Now What?
+4. Let&#39;s Do It!
+5. It worked! (Hopefully)
+
+
+How the #$@&amp; Do I Use an API?! I&#39;m taking a break from the WordPress development topic to delve into APIs. (Yay!)
+I&#39;ll be using the Wikipedia API for this example.
+1. So... What&#39;s an API? APIs&amp;#8212;application programming interfaces&amp;#8212;are the current standard in utilizing information and technologies on the web.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sass on Kimberly the Geek</title>
+    <link>http://www.kimberlythegeek.com/tags/sass/</link>
+    <description>Recent content in Sass on Kimberly the Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Dec 2016 15:56:16 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.kimberlythegeek.com/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Child Themes in Wordpress - Getting Started</title>
+      <link>http://www.kimberlythegeek.com/posts/creating-child-themes-wordpress/</link>
+      <pubDate>Tue, 27 Dec 2016 15:56:16 +0000</pubDate>
+      
+      <guid>http://www.kimberlythegeek.com/posts/creating-child-themes-wordpress/</guid>
+      <description>The Basics of Child Themes There are many reasons why you should create child themes when using any customization. If you modify the CSS or PHP directly in a Wordpress theme, and later update the theme, all of your changes will be lost.
+With child themes, you can update the parent themes without overwriting your custom styles.
+
+I prefer to use a theme released directly from Wordpress.org, such as Twenty Fourteen, Twenty Fifteen, Twenty Sixteen, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

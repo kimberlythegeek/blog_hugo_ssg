@@ -1,0 +1,114 @@
+<html>
+  <head><meta charset="UTF-8">
+<meta name='description' content='Just a geek blogging about geeky things'>
+<meta name='keywords' content='programming,python,javascript,linux,accessibility,apache,mysql,angular,mozilla'>
+<meta name='author' content='Kimberly Sereduck'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="http://www.kimberlythegeek.com/css/bootstrap.css">
+<link rel="stylesheet" href="http://www.kimberlythegeek.com/css/style.css"><title>Python Virtual Environments</title>
+  </head>
+
+  <body><header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link site-brand" href="http://www.kimberlythegeek.com/">kimberlythegeek</a>
+        <div class="flex-row-reverse" id="navbarNav">
+          <ul class="nav">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/">Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/posts/">Posts</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.kimberlythegeek.com/about/">About</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+</header><main>
+      <div id="content" class="container-fluid">
+        <div class="row justify-content-center">
+          <article class="col-10 featured-article">
+            <div class=" article-header">
+              <h1>Python Virtual Environments</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="article-body col-8">
+                <h1>Why Should I Use Python Virtual Environments?</h1>
+<p>It is <strong>always</strong> recommended to use python virtual environments for all of your projects. But why?</p>
+<p><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/" target="_blank">As The Hitchhiker's Guide to Python</a> says:</p>
+<blockquote><p>
+A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.</p>
+<p>It solves the &ldquo;Project X depends on version 1.x but, Project Y needs 4.x&rdquo; dilemma, and keeps your global site-packages directory clean and manageable.
+</p></blockquote>
+<p><!--more--></p>
+<h1>Create a Virtual Environment for Python</h1>
+<p><a href="#install-python">1. Install Python</a><br />
+<a href="#install-pip">2. Install Pip</a><br />
+<a href="#install-venv">3. Install virtualenv</a><br />
+<a href="#config-venv">4. Configure virtualenv</a></p>
+<h2 id="install-python">1. Install Python</h2>
+<pre>$ python --version</pre>
+<p>If nothing is printed to the console, install python:</p>
+<pre>$ sudo apt-get install python</pre>
+<p>As of writing this, I am running Python 2.7.12.</p>
+<h2 id="install-pip">2. Install Pip (if it isn't already)</h2>
+<p>In Python 2, <code>pip</code> is installed by default in <strong>Python 2.7.9 and later</strong>, and in Python 3, it is installed by default in <strong>Python 3.4 and later</strong>. <sup><a href="http://docs.python-guide.org/en/latest/starting/install/linux/" target="_blank">[1]</a></sup></p>
+<p>Check if pip is installed:</p>
+<pre>$ pip --version</pre>
+<p>If nothing is printed to the console, <a href="https://pip.pypa.io/en/latest/installing/" target="_blank">install pip</a>:</p>
+<p>Download <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">get-pip.py</a>. <sup><a href="https://pip.pypa.io/en/latest/installing/#id8" target="_blank">[2]</a></sup></p>
+<p>Run:</p>
+<pre>$ python get-pip.py</pre>
+<blockquote class="warning"><p>
+Be cautious if you're using a Python install that's managed by your operating system or another package manager. get-pip.py does not coordinate with those tools, and may leave your system in an inconsistent state.<sup><a href="https://pip.pypa.io/en/latest/installing/" target="_blank">[3]</a></sup>
+</p></blockquote>
+<h2 id="install-venv">3. Install virtualenv</h2>
+<p>Install the package:</p>
+<pre>
+$ pip install virtualenv
+</pre>
+<p>Create the directory and virtualenv for your project:</p>
+<pre>
+$ mkdir my-project
+$ cd my-project
+$ virtualenv venv
+</pre>
+<h2 id="config-venv">4. Configure virtualenv</h2>
+<p>For convenience, we'll follow <strong><a href="https://saurabh-kumar.com/blog/virtualenv-vs-virtualenvwrapper.html" target="_blank">this guide by Saurabh Kumar</a></strong> to create an alias for activating virtual environments, without relying on <code>virutalenvwrapper</code>.</p>
+<p>Add this line to your <code>~/.bashrc</code> file:</p>
+<pre>
+alias venv-activate='source venv/bin/activate && export PS1="(${PWD##*/}-venv)$_OLD_VIRTUAL_PS1"'
+</pre>
+<p>This will enable you to start your virtualenv (if it's within your project's <strong>venv</strong> folder) using <code>venv-activate</code>, instead of <code>source venv/bin/activate</code>.</p>
+<p><a href="https://saurabh-kumar.com/blog/virtualenv-vs-virtualenvwrapper.html" target="_blank">Saurabh Kumar</a> used the shortcut <code>sv</code>, but I chose to not use it, because sv is a shortcut that already exists in Ubuntu.</p>
+<p>You can make the shortcut anything you like, you may prefer something shorter than <code>venv-activate</code>.</p>
+<p>Open a new terminal, and test it out:</p>
+<pre>
+$ cd my-project
+$ venv-activate
+<strong>(my-project-venv)</strong> ~/my-project $
+</pre>
+<p>To deactivate the virtual environment, type <code>deactivate</code> at any time.</p>
+<h5>We're Done!</h5>
+<p>On to bigger and better things...</p>
+
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+  
+</html>
